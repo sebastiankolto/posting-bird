@@ -85,7 +85,7 @@ function handleCommenting(tweetId){
 
     targetTweetObj.replies.push({
             handle: `@Sebastian`,
-            profilePic: `images/sebastian.jpg`,
+            profilePic: `images/Sebastian.jpg`,
             tweetText: commentInput
     })
 
