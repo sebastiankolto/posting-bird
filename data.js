@@ -1,0 +1,60 @@
+export const tweetsData = [   
+    {
+        handle: `@Kim Kardashian 💎`,
+        profilePic: `images/kim_kardashian.jpg`,
+        likes: 27,
+        retweets: 10,
+        tweetText: `We're talking every little stream of consciousness, and honestly, I miss this kind of internet!`,
+        replies: [],
+        isLiked: false,
+        isRetweeted: false,
+        commentsOpened: false,
+        uuid: '4b161eee-c0f5-4545-9c4b-8562944223ee',
+    },    
+    {
+        handle: `@Vin Diesel`,
+        profilePic: `images/vin_diesel.jpg`,
+        likes: 6500,
+        retweets: 234,
+        tweetText: `I need volunteers for the newest Fast and Furious cast🏎️`,
+        replies: [
+                  {
+                handle: `@Jason Statham ✅`,
+                profilePic: `images/jason_statham.jpg`,
+                tweetText: `Sign me up! 😎🛩`,
+            },
+                  {
+                handle: `@Ludacris ✅`,
+                profilePic: `images/ludacris.jpg`,
+                tweetText: `I went last year😴`,
+            },
+        ],
+        isLiked: false,
+        isRetweeted: false,
+        commentsOpened: false,
+        uuid: '3c23454ee-c0f5-9g9g-9c4b-77835tgs2',
+    },
+        {
+        handle: `@NoobCoder12`,
+        profilePic: `images/flower.jpeg`,
+        likes: 10,
+        retweets: 3,
+        tweetText: `Are you a coder if you only know HTML?`,
+        replies: [
+            {
+                handle: `@StackOverflower ☣️`,
+                profilePic: `images/disaproving_person.jpg`,
+                tweetText: `No. Obviosuly not. Go get a job in McDonald's.`,
+            },
+            {
+                handle: `@YummyCoder64`,
+                profilePic: `images/calm_person.jpg`,
+                tweetText: `You are wonderful just as you are! ❤️`,
+            },
+        ],
+        isLiked: false,
+        isRetweeted: false,
+        commentsOpened: false,
+        uuid: '8hy671sff-c0f5-4545-9c4b-1237gyys45',
+    },     
+]

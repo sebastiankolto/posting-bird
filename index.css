@@ -1,0 +1,271 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    width:100vw;
+    max-width:100%;
+    max-height:100%;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    max-width:400px;
+    /* min-height:700px; */
+    height:70vh;
+    border-radius:16px;
+    background-color:white;
+    box-shadow:0px 0px 20px 10px rgba(0,0,0,0.05);
+    padding:20px;
+}
+
+header{
+    margin: 0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:10%;
+    width:100%;
+    position:relative;
+}
+
+header h1{
+    margin-bottom:32px;
+}
+
+main{
+    height:90%;
+    /* padding:0px 16px 25px 16px; */
+}
+
+/* typography and icons */
+h1{
+    color: #0F8CDF;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+i{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.fa-solid{
+    color: #999;
+}
+
+.liked{
+    color: red;
+}
+
+.retweeted {
+  color: limegreen;
+}
+
+/* layout */
+.tweet-input-area {
+    position:relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding:0px 16px;
+}
+
+.char-count{
+    justify-content:center;
+    width:8%;
+    text-align:center;
+    padding:8px;
+    border-radius:30px;
+    position:absolute;
+    top:0;
+    right:0;
+    background:#e1f2fd;
+    color:#1DA1F2;
+    font-size:12px;
+    display:none;
+}
+
+/* textareas + btn */
+
+.main-text-area{
+    border: none;
+    resize: none;
+    outline:none;
+    /* white-space:nowrap;
+    overflow-x:auto;
+    overflow-y:hidden; */
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.main-text-area::-webkit-scrollbar {
+    height:10px;
+}
+
+.feed::-webkit-scrollbar{
+    width:10px;
+}
+
+.main-text-area::-webkit-scrollbar-thumb, .feed::-webkit-scrollbar-thumb{
+    background:#e7f5ff;
+    cursor:grab;
+    border-radius:10px;
+}
+
+.main-text-area::-webkit-scrollbar-thumb:hover, .feed::-webkit-scrollbar-thumb:hover{
+    background:#50a7dd;
+}
+
+.tweet-submit{
+    position:relative;
+    background-color: #1DA1F2;
+    border: none;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 20px;
+    width: 100%; 
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.feed{
+    margin-top:8px;
+    padding:0px 8px;
+    position:relative;
+    z-index:0;
+    overflow-y:scroll;
+    height:76%;
+}
+
+/* tweet */
+
+.tweet{
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.tweet-inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tweet-inner-replies{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.tweet-inner-replies-content{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.tweet-data{
+    width:75%;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.tweet-details{
+    display: flex;
+    font-size: 13px;
+    justify-content:flex-start;
+    gap:16px;
+}
+
+.tweet-detail{
+    display: flex;
+    gap: 4px;
+}
+
+.tweet-detail i:hover{
+    color:#1DA1F2;
+}
+
+.tweet-reply{
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0px;
+    margin: 10px 0 10px 40px;
+    width: 80%;
+}
+
+
+
+
+.tweet-comment{
+    display:flex;
+    gap:5px;
+    max-width:100%;
+    justify-content:space-between;
+}
+
+.comment{
+    border:none;
+    outline:none;
+    width:100%;
+}
+
+.fa-share{
+    color:#1DA1F2;
+}
+
+
+
+
+.handle{
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 0;
+}
+
+.tweet-text{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* images */
+
+.profile-pic{
+    border: 1px solid lightgray;
+    border-radius: 100%;
+    width: 48px;
+}
+
+/* utility */
+.hidden{
+    display: none;
+}
+
+
+@media (max-width: 900px){
+    body{
+        height:100vh;
+    }
+
+    .feed{
+        height:80%;
+    }
+}
