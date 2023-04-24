@@ -85,7 +85,7 @@ function handleCommenting(tweetId){
 
     targetTweetObj.replies.push({
             handle: `@Sebastian`,
-            profilePic: `images/Sebastian.jpg`,
+            profilePic: `images/sebastian.jpg`,
             tweetText: commentInput
     })
 
@@ -106,7 +106,7 @@ function handleTweetBtnClick(){
     if(tweetInput.value){
         tweetsData.unshift({
             handle: `@Sebastian`,
-            profilePic: `images/Sebastian.jpg`,
+            profilePic: `images/sebastian.jpg`,
             likes: 0,
             retweets: 0,
             tweetText: tweetInput.value,
@@ -206,7 +206,7 @@ function getFeedHtml(){
 
                 <div class="tweet-reply">
 						<div class="tweet-inner-replies">
-							<img src="images/Sebastian.jpg" class="profile-pic">
+							<img src="images/sebastian.jpg" class="profile-pic">
 							<div class="tweet-inner-replies-content">
 								<p class="handle">Sebastian</p>
 								<div class="tweet-comment">
